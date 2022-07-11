@@ -8,7 +8,6 @@ public aspect TimedAspect {
         long end = System.currentTimeMillis();
         System.out.println("The method :" + thisJoinPointStaticPart.getSignature()
         + " took " + (end-start) + " ms");
-
         return ret;
         }
 }
